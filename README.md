@@ -1,9 +1,13 @@
 # Emphasize Text
 
+[![npm version](https://badge.fury.io/js/emphasize-text.svg)](https://badge.fury.io/js/emphasize-text)
+
 Emphasize text is used for easy emphasizing of text content on web pages.
 
 Emphasize text analyzes the text inside it, and finds the provided keywords / regex given and surrounds them with spans for
 simple styling
+
+Due to Emphasize Text using comma (,) as the seperator of the strings, comma itself cannot be highlighted.
 
 ### Install
 
@@ -48,3 +52,10 @@ import 'emphasize-text';
 Would result to
 
 ![Emphasize demo image](emphasize-text.png)
+
+### Properties
+
+| Name             | Usage                                                         | Examples                              |
+| ---------------- | ------------------------------------------------------------- | ------------------------------------- |
+| `emphasize`      | Comma seperated list of words/regexes you want to emphasize   |  `emphasize="me,you"`                 |
+| `emphasizeClass` | Set custom class to emphasized elements for more unique usage | `emphasizeClass="my-emphasize-class"` |
