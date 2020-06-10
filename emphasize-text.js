@@ -16,6 +16,9 @@ export default class EmphasizeText extends HTMLElement {
     }
 
     connectedCallback() {
+        if (!this.hasAttribute('emphasize')) {
+            return;
+        }
         const words = this.getAttribute('emphasize').split(',');
 
         let content = this.innerHTML;
