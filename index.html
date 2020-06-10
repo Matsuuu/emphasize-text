@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <style>
+            .card {
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+                width: 50%;
+                margin: 0 auto 5rem;
+                border-radius: 4px;
+                border: 2px solid; #3c3c3c;
+            }
+
+            .emphasize {
+                font-weight: bold;
+            }
+
+            .orange-text {
+                color: #ff6d00;
+            }
+
+            .code-emphasize {
+                font-weight: bold;
+                color: green;
+            }
+
+            .subtitle {
+                color: #3c3c3c;
+                font-size: 1rem;
+            }
+
+            .hover-emphasize {
+                color: blue;
+                font-weight: bold;
+                cursor: pointer;
+                transition: 100ms ease-in-out;
+            }
+
+            .hover-emphasize:hover {
+                font-size: 2rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="card">
+            <p class="subtitle">Emphasizing String used: "Emphasize Text,you"</p>
+            <emphasize-text emphasize="Emphasize Text,you" emphasizeClass="orange-text">
+                <p>With Emphasize Text, you can easily add attention the the parts of the text content you want.</p>
+                <p>
+                    Emphasize Text allows you to easily create templates, which draw the user's attention and ephasize's
+                    the point you want to make.
+                </p>
+            </emphasize-text>
+        </div>
+
+        <div class="card">
+            <p class="subtitle">Emphasizing String used: "\d*\.*\d*€"</p>
+            <emphasize-text emphasize="\d*\.*\d*€">
+                <h3>Easy Emphasizing of content</h3>
+                <p>Price: 0€, not 5€, nor 9.90€</p>
+            </emphasize-text>
+        </div>
+
+        <div class="card">
+            <p class="subtitle">Emphasizing String used: "style,span,emphasizeClass"</p>
+            <emphasize-text emphasize="style,span,emphasizeClass" emphasizeClass="code-emphasize">
+                <p>
+                    <span>You can style the text just the way you want.</span> Emphasize Text adds the a span -element
+                    around the found strings with a class "emphasize", unless a custom emphasizeClass is provided
+                </p>
+            </emphasize-text>
+        </div>
+
+        <div class="card">
+            <p class="subtitle">Emphasizing String used: "hover"</p>
+            <emphasize-text emphasize="hover" emphasizeClass="hover-emphasize">
+                <p>
+                    And since you can style the elements yourself, you can add any kinds of effects to the spans. For
+                    example some hover effect
+                </p>
+            </emphasize-text>
+        </div>
+
+        <script src="./emphasize-text.js" type="module"></script>
+    </body>
+</html>

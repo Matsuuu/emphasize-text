@@ -1,0 +1,17 @@
+{
+    "name": "emphasize-text",
+    "version": "1.0.0",
+    "description": "Emphasize Text is a simple web component to emphasize parts of a text content.",
+    "main": "emphasize-text.js",
+    "files": [
+        "emphasize-text.js"
+    ],
+    "scripts": {
+        "start": "es-dev-server --app-index index.html --node-resolve --watch "
+    },
+    "author": "Matsuuu",
+    "license": "ISC",
+    "devDependencies": {
+        "es-dev-server": "^1.54.1"
+    }
+}
