@@ -1,6 +1,6 @@
 {
     "name": "emphasize-text",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Emphasize Text is a simple web component to emphasize parts of a text content.",
     "main": "emphasize-text.js",
     "files": [
