@@ -12,6 +12,6 @@
     "author": "Matsuuu",
     "license": "ISC",
     "devDependencies": {
-        "es-dev-server": "^1.54.1"
+        "es-dev-server": "^1.56.1"
     }
 }
